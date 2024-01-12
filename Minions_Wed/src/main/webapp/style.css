@@ -8,6 +8,12 @@
 	 - 부분 :float,
 
 */
+:foot {
+	--main-font-color:#000;
+	--main-link-color:#666;
+	--base-font-size: 16px;
+	--point-font-size: 20px;
+}
 
 *,
 *::before,
@@ -20,10 +26,20 @@
 body {
 	font-family: 'Maven Pro', 'Noto Sans KR' sans-serif;
 }
+
+a, a:link {
+	color: inherit;
+	text-decoration: none;
+}
+
 /*====================== 01.레아이웃 공통 클래스==========================*/
+.d-none {
+	display:none;
+}
 .d-flex {
 	display:flex;
 }
+
 .justify-center {
 	justify-content: center;
 }
@@ -33,6 +49,7 @@ body {
 .justify-around {
 	justify-content: space-around;
 }
+
 .align-center {
 	align-items: center;
 }
@@ -47,10 +64,36 @@ body {
 	margin:0 auto;
 }
 
+
+.gap-1 {
+	gap: 1rem;
+}
+.gap-2 {
+	gap: 2rem;
+}
+.gap-3 {
+	gap: 3rem;
+}
+
+
+.border-top-thin {
+	border-top:1px solid #000
+}
+.border-left-thin {
+	border-left: 1px solid #000
+}
+hr {
+	height: 0;
+	background-color: #000
+}
+
 /*=======================02. 레이아웃 구역별 세부 클래스 정의 ==================*/
 
 /*=======================02-1 header 클래스 정의 ==================*/
-
+.links {
+	font-size: 14px;
+	color: var(--main-link-color);
+}
 
 
 
