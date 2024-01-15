@@ -1,0 +1,62 @@
+@charset "UTF-8";
+*,
+*::defore,
+*::after {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+:foot {
+	--main-font-color:#000;
+	--main-link-color:#666;
+	--base-font-size: 16px;
+	--point-font-size: 20px;
+}
+
+/*==================== 레이아웃 공통 클래스 ======================*/
+.d-none {
+	display:none;
+}
+.d-flex {
+	display:flex;
+}
+.mx-auto {
+	margin:0 auto;
+}
+
+.gap-1 {
+	gap:1rem;
+}
+
+
+.justify-between {
+	justify-content: space-between;
+}
+.justify-center {
+	justify-content: center;
+}
+
+align-center {
+	align-items:center;
+}
+
+.ar {
+	background-color: red;
+}
+.ae {
+	background-color: blue;
+}
+
+.container {
+	max-width:1100px;
+}
+
+/*================== header 클래스정의=======================*/
+.links {
+	font-size:14px;
+	color:var(--main-link-color);
+}
+
+
+
+
