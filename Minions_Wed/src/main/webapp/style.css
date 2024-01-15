@@ -10,6 +10,8 @@
 */
 :root {
 	--base-font-color:#000;
+	--right-font-color:#888;
+	--dark-font-color:#333;
 	--main-font-color:#f9c02d;
 	--main-link-color:#666;
 	--base-font-size: 16px;
@@ -42,6 +44,9 @@ a, a:link {
 }
 
 /*====================== 플렉스 컨테이너 ==========================*/
+.fs-0 {
+	font-size: 0;
+}
 .d-none {
 	display:none;
 }
@@ -69,6 +74,19 @@ a, a:link {
 
 .container {
 	max-width: 1000px; /*요즘 네이버 기준 1200쯤.*/
+}
+
+.py-1 {
+	padding-top:1rem;
+	padding-bottom:1rem;
+}
+.py-2 {
+	padding-top:2rem;
+	padding-bottom:2rem;
+}
+.py-3 {
+	padding-top:3rem;
+	padding-bottom:3rem;
 }
 .mx-auto {
 	margin:0 auto;
@@ -200,6 +218,20 @@ aside {
 	text-align: center;
 	
 }
-
+.extra-links {
+	font-size: .75rem;
+}
+.extra-links a {
+	font-size: .75rem;
+	color: var(--light-font-color);
+}
+.extra-links a:hover {
+	font-size: .75rem;
+	color: var(--dark-font-color);
+}
+footer address {
+	font-size: .55rem;
+	color: var(--light-font-color);
+}
 
 
