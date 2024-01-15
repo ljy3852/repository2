@@ -8,9 +8,9 @@
 	 - 부분 :float,
 
 */
-:foot {
+:root {
 	--base-font-color:#000;
-	--main-font-color:#f9c02d;
+	--main-font-color:#f9c02d;;
 	--main-link-color:#666;
 	--base-font-size: 16px;
 	--point-font-size: 20px;
@@ -88,7 +88,7 @@ a, a:link {
 }
 .hr {
 	border:0;
-	height: 0;
+	height:2px;
 	background-color: var(--main-font-color);
 	position:relative;
 	top:-5px;
@@ -103,6 +103,11 @@ a, a:link {
 .links {
 	font-size: 14px;
 	color: var(--main-link-color);
+	height: 60px;
+}
+.topNav {
+	height:60px;
+	
 }
 /*=======================02-2 main_nav ==================*/
 .main_nav a {
@@ -114,7 +119,32 @@ a, a:link {
 	color: var(--base-font-color);
 }
 
+/*=======================02-2 trailer 아이디 정의==================*/
+.devils {
+	z-index:10;
+	left:50%;
+	top:50%;
+	transform: translateX(-50%);
+}
 
+.devils:hover {
+	display:none;
+}
+
+.youtubeWrap{
+    position: relative;
+    height: 240px;
+    padding-top: 0px;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+}
+.youtubeWrap iframe,.youtubeWrap object,.youtubeWrap embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 
 
