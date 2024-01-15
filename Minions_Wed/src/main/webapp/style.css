@@ -194,6 +194,12 @@ main h2 {
 	flex: 1 /*flexbox layout : 유연한 레이아웃 사이즈 몰라도 공간에 맞춤*/
 }
 
+/*======================= aside ==================*/
+aside {
+	background-color: var(--main-font-color);
+	text-align: center;
+	
+}
 
 
 
